@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const host = "http://localhost:5000";
-
+//const host = "http://localhost:5000";
+const host = "https://clone-app-238n.onrender.com";
 export const GetAllCust = createAsyncThunk("customer/GetAllCust", async () => {
     const response = await fetch(`${host}/api/Cust/GetAllCust`, {
         method: "GET",

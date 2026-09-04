@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const host = "http://localhost:5000";
+//const host = "http://localhost:5000";
+const host = "https://clone-app-238n.onrender.com";
 const initialState = {
     user: [],
     loading: false,

@@ -53,7 +53,7 @@ export default function Login(props) {
 
         try {
             const user = await fetch(
-                "http://localhost:5000/api/Auth/GetUser",
+              "https://clone-app-238n.onrender.com/api/Auth/GetUser",
                 {
                     method: "POST",
                     headers: {

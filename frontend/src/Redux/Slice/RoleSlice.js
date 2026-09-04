@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const host = "http://localhost:5000";
-
+//const host = "http://localhost:5000";
+const host = "https://clone-app-238n.onrender.com";
 export const GetAllRoles = createAsyncThunk("role/GetAllRoles", async () => {
     const response = await fetch(`${host}/api/Role/GetAllRoles`, {
         method: "GET",

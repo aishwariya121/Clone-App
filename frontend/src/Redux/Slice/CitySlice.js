@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const host = "http://localhost:5000";
-
+//const host = "http://localhost:5000";
+const host = "https://clone-app-238n.onrender.com";
 // Get all states
 export const GetAllState = createAsyncThunk("city/GetAllState", async () => {
     const response = await fetch(`${host}/api/City/GetAllState`, {

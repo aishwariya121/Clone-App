@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const host = "http://localhost:5000";
-
+//const host = "http://localhost:5000";
+const host = "https://clone-app-238n.onrender.com";
 // Get all offices
 export const GetAllOffices = createAsyncThunk("office/GetAllOffices", async () => {
     const response = await fetch(`${host}/api/Office/GetAllOffices`, {

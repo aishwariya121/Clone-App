@@ -4,8 +4,9 @@ import React, { useState } from "react";
 
 
 const State = (props) => {
-    const host = "http://localhost:5000";
-    const notInitials = [];
+  //  const host = "http://localhost:5000";
+  const host = "https://clone-app-238n.onrender.com";  
+  const notInitials = [];
 
     const [dateFilter, setDateFilter] = useState({
         type: "today",
