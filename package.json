@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "concurrently": "^10.0.4",
+    "react-pro-sidebar": "^1.1.0",
+    "react-router-dom": "^7.18.1"
+  },
+  "name": "clone-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "cd Backend && nodemon index.js",
+    "frontend": "cd Frontend && npm run start",
+    "both": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
