@@ -61,10 +61,13 @@ function App() {
   return (
     <Router>
       <Routes>
-       <Route path="/" element={<Dashboard />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Dashboard />} />
+        </Route>
       </Routes>
     </Router>
   );
 }
+
 
 export default App;
