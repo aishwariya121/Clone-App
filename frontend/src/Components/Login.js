@@ -61,7 +61,9 @@ export default function Login(props) {
 
             const data = await user.json();
             console.log("Login Data:", data);
-
+            console.log("Login Response Status:", user.status);
+            console.log("Login Response ", user);
+            console.log("Login data :", data);
             if (!user.ok) {
                 props.showAlert(
                     data.error || "Invalid email or password",
