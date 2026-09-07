@@ -10,6 +10,7 @@ import Customer from "./Components/Customer";
 import { useState } from "react";
 import User from "./Components/User";
 import Role from "./Components/Role";
+import Alert from "./Components/Alert";
 
 
 
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <Router>
+        <Alert alert={alert} />
       <Routes>
 
         {/* Login page */}

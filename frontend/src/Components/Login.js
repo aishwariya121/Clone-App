@@ -61,18 +61,29 @@ export default function Login(props) {
 
             const data = await user.json();
             console.log("Login Data:", data.success);
-            
+
             console.log("Login Data:", data);
-            
-          
+
+
+            // if (!data.success) {
+            //     props.showAlert(
+            //         data.error || "Try Login with valid Credentials",
+            //         "danger"
+            //     );
+            //     return;
+            // }
+
             if (!data.success) {
+                console.log("FALSE BLOCK RUNNING");
+                console.log("ERROR:", data.error);
+                console.log("SHOW ALERT FUNCTION:", props.showAlert);
+
                 props.showAlert(
                     data.error || "Try Login with valid Credentials",
                     "danger"
                 );
                 return;
             }
-
             //Using Redux to store the login data
             dispatch(
                 login({
