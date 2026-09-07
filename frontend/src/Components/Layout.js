@@ -41,12 +41,15 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login showAlert={showAlert} />} />
 
-        <Route
+        {/* <Route
           element={
             <ProtectedRoute>
               <Layout alert={alert} showAlert={showAlert} />
             </ProtectedRoute>
           }
+        > */}
+        <Route
+          element={<Layout alert={alert} showAlert={showAlert} />}
         >
           <Route path="/" element={<Dashboard showAlert={showAlert} />} />
           <Route path="/user" element={<User showAlert={showAlert} />} />
