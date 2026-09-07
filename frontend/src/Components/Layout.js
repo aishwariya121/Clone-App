@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Layout from "./Layout";
-import Login from "./Components/Login";
-import Dashboard from "./Components/Dashboard";
-import Office from "./Components/Office";
-import Builty from "./Components/Builty";
-import City from "./Components/City";
-import BuiltyReport from "./Components/BuiltyReport";
-import Customer from "./Components/Customer";
+import Login from "./Login";
+import Dashboard from "./Dashboard";
+import Office from "./Office";
+import Builty from "./Builty";
+import City from "./City";
+import BuiltyReport from "./BuiltyReport";
+import Customer from "./Customer";
 import { useState } from "react";
-import User from "./Components/User";
-import Role from "./Components/Role";
+import User from "./User";
+import Role from "./Role";
 
 function ProtectedRoute({ children }) {
   const { isLoggedIn, token } = useSelector((state) => state.auth);
