@@ -43,6 +43,13 @@ const authSlice = createSlice({
             state.Role_Name = null;
             state.Permissions = [];
             state.isLoggedIn = false;
+
+            localStorage.removeItem("token");
+            localStorage.removeItem("User_Name");
+            localStorage.removeItem("Email");
+            localStorage.removeItem("Role_Id");
+            localStorage.removeItem("Role_Name");
+            localStorage.removeItem("Permissions");
         }
     }
 });
