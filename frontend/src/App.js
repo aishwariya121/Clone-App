@@ -56,8 +56,15 @@ import Role from "./Components/Role";
 //   );
 // }
 
+
 function App() {
-    return <div>HELLO</div>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<div>ROUTER WORKS</div>} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
