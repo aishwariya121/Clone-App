@@ -64,7 +64,7 @@ export default function Login(props) {
             console.log("Login Response Status:", user.status);
             console.log("Login Response ", user);
           
-            if (!user.ok) {
+            if (!data.success) {
                 props.showAlert(
                     data.error || "Try Login with valid Credentials",
                     "danger"
