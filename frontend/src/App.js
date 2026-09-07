@@ -61,7 +61,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<div>ROUTER WORKS</div>} />
+       <Route path="/" element={<Dashboard />} />
       </Routes>
     </Router>
   );
